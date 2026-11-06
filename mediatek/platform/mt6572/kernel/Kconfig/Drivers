@@ -264,6 +264,7 @@ config  MTK_CMMB
         #tristate "MediaTek CMMB Driver"
         depends on  MTK_SPI
         default m
+	bool
         ---help---
           This selects the MediaTek(R) CMMB driver.
           If you want to use MediaTek(R) CMMB driver, say M here.

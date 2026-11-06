@@ -23,7 +23,7 @@ static struct map_desc mt_io_desc[] __initdata =
     /* MM Subsys */
     {
         .virtual = MMSYS_CONFIG_BASE,
-        .pfn = __phys_to_pfn(IO_VIRT_TO_PHYS(MMSYS_CONFIG_BASE)),
+        .pfn = __phys_to_pfn((IO_VIRT_TO_PHYS(MMSYS_CONFIG_BASE)) >> 12),
         .length = SZ_128K,
         .type = MT_DEVICE
     },

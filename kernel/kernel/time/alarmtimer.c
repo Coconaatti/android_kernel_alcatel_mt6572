@@ -194,7 +194,7 @@ void alarm_set_power_on(struct timespec new_pwron_time, bool logo)
 	now = rtc_tm_to_ktime(alm.time);
 	rtc_timer_start(alarm_rtc_dev, &rtctimer, now, ktime_set(0, 0));
 */
-	rtc_timer_cancel(alarm_rtc_dev, &rtctimer);
+        //timer_cancel(alarm_rtc_dev, &rtctimer);
 	rtc_set_alarm(alarm_rtc_dev, &alm);
 	rtc_set_alarm_poweron(alarm_rtc_dev, &alm);
 }

@@ -14,7 +14,7 @@
  #
  # Please maintain this if you use this script or any part of it
  #
-toolchain=~/arm-cortex-linux-gnueabi-linaro_5.2-2015.11-2/bin
+toolchain=/~/arm-cortex-linux-gnueabi-linaro_5.2-2015.11-2/bin
 kernel="Phoenix"
 variant="v2"
 toolchain2="arm-eabi-"
@@ -58,6 +58,7 @@ export KBUILD_BUILD_USER="chijure"
 export KBUILD_BUILD_HOST="team-Panther"
 cd kernel
 export MTK_ROOT_CUSTOM=../mediatek/custom/ MTK_PATH_PLATFORM=../mediatek/platform/mt6572/kernel/ MTK_PATH_SOURCE=../mediatek/kernel/
+make tct_hammer_defconfig
 make $jobcount
 $KERNEL_DIR/mediatek/build/tools/mkimage $KERNEL_DIR/kernel/arch/arm/boot/zImage KERNEL > $KERNEL_DIR/kernel/zip-creator/tools/zImage
 if ! [ -a $ZIMAGE ];

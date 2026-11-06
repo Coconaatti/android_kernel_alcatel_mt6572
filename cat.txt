@@ -1,0 +1,226 @@
+choose your target device
+1) Alcatel-POP-C1
+2) Alcatel-POP-C2
+3) Alcatel-POP-C3
+4) Alcatel-POP-C5
+5) Alcatel-Idol Mini
+[0;34m***********************************************
+          Compiling Phoenix kernel          
+***********************************************[0m
+#
+# configuration written to .config
+#
+scripts/kconfig/conf --silentoldconfig Kconfig
+[DELETE] ../mediatek/custom/out/yarisl/kernel/usb/modules.builtin
+[DELETE] ../mediatek/custom/out/yarisl/kernel/modules.builtin
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: 'include/generated/mach-types.h' is up to date.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      mediatek/platform/mt6572/kernel/core/core.o
+  CC      mediatek/platform/mt6572/kernel/core/timer.o
+  AS      arch/arm/kernel/debug.o
+  AS      arch/arm/kernel/head.o
+  LD      crypto/built-in.o
+  CC      arch/arm/kernel/init_task.o
+  CC      block/elevator.o
+  CC      mediatek/platform/mt6572/kernel/core/mt_devs.o
+scripts/Makefile.build:343: recipe for target 'arch/arm/kernel/debug.o' failed
+  CC      mediatek/platform/mt6572/kernel/core/mt_gpt.o
+scripts/Makefile.build:343: recipe for target 'arch/arm/kernel/head.o' failed
+  CC      block/blk-core.o
+  LD      sound/built-in.o
+  LD      drivers/auxdisplay/built-in.o
+  CC      block/blk-tag.o
+  CC      drivers/base/core.o
+  LD      firmware/built-in.o
+  CC      block/blk-sysfs.o
+scripts/Makefile.build:307: recipe for target 'mediatek/platform/mt6572/kernel/core/timer.o' failed
+  CC      drivers/base/bus.o
+scripts/Makefile.build:307: recipe for target 'mediatek/platform/mt6572/kernel/core/core.o' failed
+  CC      block/blk-flush.o
+  LD      mediatek/kernel/drivers/aee/aed/built-in.o
+  CC      mediatek/kernel/drivers/aee/common/aee-common.o
+  CC      drivers/block/brd.o
+  CC      block/blk-settings.o
+  CC      block/blk-ioc.o
+  LD      mediatek/custom/out/yarisl/kernel/usb/built-in.o
+  CC      block/blk-map.o
+scripts/Makefile.build:307: recipe for target 'mediatek/platform/mt6572/kernel/core/mt_gpt.o' failed
+Makefile:973: recipe for target 'mediatek/platform/mt6572/kernel/core' failed
+  CC      mediatek/custom/out/yarisl/kernel/touchpanel/tpd_init.o
+  LD      drivers/cdrom/built-in.o
+  CC      mediatek/kernel/drivers/aee/common/reboot-reason.o
+  CC      block/blk-exec.o
+Makefile:973: recipe for target 'arch/arm/kernel' failed
+  CC      drivers/base/dd.o
+  CC      mediatek/kernel/kernel/mt_storage_logger.o
+  CC      mediatek/custom/out/yarisl/kernel/touchpanel/msg2138_driver.o
+  CC      mediatek/kernel/drivers/almk/almk_drv.o
+  CC      mediatek/kernel/kernel/mt_io_logger.o
+  LD      mediatek/kernel/drivers/almk/almk_driver.o
+  LD      mediatek/kernel/drivers/almk/built-in.o
+  LD      mediatek/kernel/drivers/aee/ipanic/built-in.o
+  CC      mediatek/kernel/kernel/sched/prio_tracer.o
+  CC      drivers/char/mem.o
+  LD      mediatek/kernel/kernel/sched/built-in.o
+  LD      mediatek/kernel/kernel/built-in.o
+  CC      drivers/char/random.o
+  CC      drivers/base/syscore.o
+  CC      mediatek/kernel/drivers/aee/common/wdt-handler.o
+  CC      mediatek/custom/out/yarisl/kernel/touchpanel/tpd_setting.o
+  CC      drivers/base/driver.o
+  CC      drivers/char/frandom.o
+  LD      mediatek/kernel/drivers/bthid/built-in.o
+  CC      mediatek/kernel/drivers/aee/common/mrdump.o
+  CC      drivers/char/misc.o
+  LD      mediatek/kernel/drivers/aee/common/built-in.o
+  LD      drivers/char/built-in.o
+  LD      mediatek/kernel/drivers/aee/built-in.o
+  CC      mediatek/custom/out/yarisl/kernel/touchpanel/tpd_misc.o
+  CC      block/blk-merge.o
+  CC      drivers/base/class.o
+  LD      mediatek/kernel/drivers/ccci/built-in.o
+  CC      block/blk-softirq.o
+  CC      drivers/base/platform.o
+  LD      drivers/block/built-in.o
+  CC      drivers/clk/clkdev.o
+  LD      drivers/exfat/built-in.o
+  CC [M]  drivers/exfat/exfat.o
+  CC      drivers/base/cpu.o
+  LD      drivers/clk/built-in.o
+  CC      block/blk-timeout.o
+  CC [M]  drivers/exfat/exfat_api.o
+  LD      drivers/firewire/built-in.o
+  CC [M]  drivers/exfat/exfat_blkdev.o
+  LD      mediatek/kernel/drivers/dual_ccci/built-in.o
+  LD      drivers/firmware/built-in.o
+  CC      mediatek/custom/out/yarisl/kernel/touchpanel/tpd_calibrate.o
+  LD      mediatek/kernel/drivers/ccmni/built-in.o
+  CC [M]  drivers/exfat/exfat_cache.o
+  CC      drivers/base/firmware.o
+  CC      drivers/gpio/gpiolib.o
+  CC [M]  drivers/exfat/exfat_data.o
+  LD      mediatek/kernel/drivers/emd_ctl/built-in.o
+  CC      mediatek/kernel/drivers/evdo_support/mtk_evdo_host_interface.o
+  CC      block/blk-iopoll.o
+  CC      mediatek/custom/out/yarisl/kernel/touchpanel/tpd_default.o
+  CC [M]  drivers/exfat/exfat_global.o
+  CC      drivers/gpio/devres.o
+  CC      drivers/base/init.o
+  LD      mediatek/kernel/drivers/evdo_support/built-in.o
+  CC [M]  drivers/exfat/exfat_nls.o
+  CC      mediatek/kernel/drivers/fmradio/dummy.o
+  CC      drivers/base/map.o
+  LD      drivers/gpu/drm/i2c/built-in.o
+  LD      drivers/gpu/drm/built-in.o
+  LD      mediatek/kernel/drivers/fmradio/built-in.o
+  CC [M]  drivers/exfat/exfat_oal.o
+  CC      drivers/base/devres.o
+  CC      mediatek/custom/out/yarisl/kernel/touchpanel/tpd_button.o
+  LD      mediatek/kernel/drivers/gps/built-in.o
+  LD      drivers/gpu/ion/built-in.o
+  LD      drivers/gpu/stub/built-in.o
+  CC      mediatek/kernel/drivers/hwmon/hwmsen/hwmsen_helper.o
+  CC      drivers/base/attribute_container.o
+  CC [M]  drivers/exfat/exfat_upcase.o
+  LD      drivers/gpu/vga/built-in.o
+  CC      mediatek/kernel/drivers/hwmon/hwmsen/hwmsen_dev.o
+  LD      drivers/gpu/built-in.o
+  CC      drivers/base/transport_class.o
+scripts/Makefile.build:307: recipe for target 'drivers/gpio/devres.o' failed
+  CC [M]  drivers/exfat/exfat_super.o
+  CC      block/blk-lib.o
+  LD      drivers/hsi/clients/built-in.o
+  LD      drivers/hsi/built-in.o
+  CC      drivers/base/topology.o
+  LD      drivers/i2c/algos/built-in.o
+  LD      mediatek/kernel/drivers/hwmon/hwmsen/built-in.o
+  LD      mediatek/kernel/drivers/ion_drv/built-in.o
+scripts/Makefile.build:307: recipe for target 'drivers/gpio/gpiolib.o' failed
+scripts/Makefile.build:443: recipe for target 'drivers/gpio' failed
+  LD      drivers/i2c/busses/built-in.o
+  LD      mediatek/kernel/drivers/hwmon/built-in.o
+  CC      block/ioctl.o
+  CC      mediatek/custom/out/yarisl/kernel/touchpanel/tpd_debug.o
+  LD [M]  drivers/exfat/exfat_core.o
+  LD      mediatek/kernel/drivers/leds/built-in.o
+  CC      drivers/base/power/sysfs.o
+  LD [M]  drivers/exfat/exfat_fs.o
+  CC      mediatek/custom/out/yarisl/kernel/touchpanel/mtk_tpd.o
+  LD      drivers/i2c/muxes/built-in.o
+  CC      block/genhd.o
+  LD      drivers/i2c/built-in.o
+  CC      mediatek/kernel/drivers/m4u/m4u_kernel.o
+  CC      drivers/base/dma-mapping.o
+  CC      drivers/base/power/generic_ops.o
+  CC      mediatek/custom/out/yarisl/kernel/cam_cal/dummy_cam_cal.o
+  CC      mediatek/custom/out/yarisl/kernel/leds/cust_leds.o
+  CC      drivers/base/power/common.o
+  CC      mediatek/custom/out/yarisl/kernel/magnetometer/cust_mag.o
+  CC      drivers/base/dma-coherent.o
+  LD      mediatek/kernel/drivers/m4u/built-in.o
+  CC      block/scsi_ioctl.o
+  CC      drivers/base/power/qos.o
+  CC      mediatek/kernel/drivers/mhl/dummy.o
+  CC      drivers/base/firmware_class.o
+  CC      drivers/base/power/main.o
+  LD      mediatek/kernel/drivers/mhl/built-in.o
+  CC      mediatek/kernel/drivers/mmp/dummy/mmprofile.o
+  CC      mediatek/kernel/drivers/mtprof/prof_ctl.o
+  CC      mediatek/custom/out/yarisl/kernel/magnetometer/mmc3416x.o
+  CC      drivers/base/module.o
+  CC      drivers/base/power/wakeup.o
+  CC      mediatek/kernel/drivers/mtprof/prof_main.o
+  LD      mediatek/kernel/drivers/net/built-in.o
+  LD      mediatek/kernel/drivers/mmp/dummy/built-in.o
+  LD      mediatek/kernel/drivers/mmp/built-in.o
+  LD      mediatek/kernel/drivers/power/built-in.o
+  CC      drivers/base/power/clock_ops.o
+  CC      block/uuid.o
+  CC      mediatek/kernel/drivers/mtprof/bootprof.o
+  CC      mediatek/custom/out/yarisl/kernel/matv/nmi5625_kernel.o
+  LD      mediatek/kernel/drivers/ram_console/built-in.o
+  CC      mediatek/custom/out/yarisl/kernel/matv/cust_matv.o
+  LD      drivers/base/power/built-in.o
+  CC      mediatek/kernel/drivers/sched/mt_sched.o
+  LD      drivers/base/built-in.o
+  CC      block/partition-generic.o
+  CC      mediatek/kernel/drivers/mtprof/sched_monitor.o
+  LD      mediatek/kernel/drivers/sched/built-in.o
+Makefile:973: recipe for target 'drivers' failed
+  CC      mediatek/custom/out/yarisl/kernel/matv/nmi_gpio_i2c.o
+  LD      mediatek/kernel/drivers/thermal/built-in.o
+  CC      block/partitions/check.o
+  CC      mediatek/kernel/drivers/mtprof/monitor_debug_out.o
+  LD      mediatek/kernel/drivers/usb11/built-in.o
+  CC      mediatek/custom/out/yarisl/kernel/matv/nmi60xyuv_Sensor.o
+  LD      mediatek/kernel/drivers/usb20/built-in.o
+  CC      block/partitions/msdos.o
+  CC      mediatek/kernel/drivers/mtprof/mt_prv_lock.o
+  CC      block/noop-iosched.o
+  LD      mediatek/kernel/drivers/mtprof/mtprof.o
+  LD      block/partitions/built-in.o
+  CC      mediatek/custom/out/yarisl/kernel/flashlight/leds_strobe.o
+  LD      mediatek/kernel/drivers/mtprof/built-in.o
+  CC      block/deadline-iosched.o
+  LD      mediatek/kernel/drivers/video/built-in.o
+  CC      block/cfq-iosched.o
+  CC      mediatek/custom/out/yarisl/kernel/flashlight/kd_flashlightlist.o
+  CC      block/fiops-iosched.o
+  CC      mediatek/kernel/drivers/videocodec/videocodec_kernel.o
+  LD      mediatek/kernel/drivers/wdk/built-in.o
+scripts/Makefile.build:307: recipe for target 'mediatek/custom/out/yarisl/kernel/matv/nmi5625_kernel.o' failed
+  CC      block/sio-iosched.o
+  CC      mediatek/kernel/drivers/xlog/xlog_filter.o
+  CC      mediatek/kernel/drivers/xlog/xlog_printk.o
+  LD      mediatek/kernel/drivers/videocodec/built-in.o
+  CC      mediatek/kernel/drivers/xlog/xlog_logger.o
+  LD      block/built-in.o
+  LD      mediatek/kernel/drivers/xlog/xlog.o
+  LD      mediatek/kernel/drivers/xlog/built-in.o
+  LD      mediatek/kernel/drivers/built-in.o
+  LD      mediatek/kernel/built-in.o
+Makefile:973: recipe for target 'mediatek/custom/out/yarisl/kernel' failed
+[0;31m Kernel Compilation failed! Fix the errors! [0m
