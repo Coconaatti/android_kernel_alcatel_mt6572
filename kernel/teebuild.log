@@ -1,0 +1,6 @@
+  CHK     include/linux/version.h
+scripts/Makefile.modbuiltin:25: /kernel/Code/pop/android_kernel_alcatel_mt6572-master/kernel/mediatek/platform/mt6572/kernel/core/Makefile: Not a directory
+make[1]: *** No rule to make target '/kernel/Code/pop/android_kernel_alcatel_mt6572-master/kernel/mediatek/platform/mt6572/kernel/core/Makefile'.  Stop.
+Makefile:1135: recipe for target 'mediatek/platform/mt6572/kernel/core/modules.builtin' failed
+make: *** [mediatek/platform/mt6572/kernel/core/modules.builtin] Error 2
+make: *** Waiting for unfinished jobs....
